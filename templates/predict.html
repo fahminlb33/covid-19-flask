@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Klasifikasi COVID-19</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container center-text">
+        <h3>Hasil prediksi:</h3>    
+        <h1>{{ result }}</h1>
+        <img src="{{ img_src }}" alt="">
+
+        <a href="{{ url_for('home') }}">&larr; Kembali ke beranda</a>
+    </div>
+</body>
+
+</html>

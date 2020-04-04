@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Klasifikasi COVID-19</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Klasifikasi COVID-19</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <p>Klasifikasi citra chest X-ray dengan Convolutional Neural Network.</b></p>
+
+            <label for="gambar">Pilih gambar:</label>
+            <input class="form-input" type="file" name="file" id="file">
+
+            <input class="button" type="submit" value="Prediksi">
+        </form>
+    </div>
+</body>
+
+</html>
