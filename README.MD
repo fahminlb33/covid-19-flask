@@ -71,7 +71,7 @@ Argumen:
 Contoh:
 
 ```
-python visualize.py --input dataset\\normal\\IM-0115-0001.jpeg --stats model\layers --model model\covid-vgg.h5
+python visualize.py --input dataset\normal\IM-0115-0001.jpeg --stats model\layers --model model\covid-vgg.h5
 ```
 
 ### Running Server Flask
